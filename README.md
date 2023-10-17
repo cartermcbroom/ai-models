@@ -1,11 +1,10 @@
-# AI-Models: HuggingFace Introduction
+# AI-Models: HuggingFace Introduction 🤖
 
 ### Purpose of this workshop
 * Basic introduction to common models
 * Explore using https://huggingface.co
-* Get introduced to running different types of models locally using Gradio UI
-* Run some models from huggingface locally to perform different tasks
-* A way to run these models in AWS
+* Run different types of models to complete various tasks locally using Gradio UI
+* Look at a way to run the models in AWS
 
 ## Project setup
 1. `python -m venv .env`
@@ -14,8 +13,8 @@
 
 # Part 1 - Introduction to Hugging Face and how we can run some models locally
 
-## What's huggingface?
-Hugging face is a community and data science platform that provides:
+## What's huggingface? 🤗
+[Hugging face](https://huggingface.co/) is a community and data science platform that provides:
 * Tools that enable users to build, train and deploy ML models based on open source (OS) code and technologies.
 * A place where a broad community of data scientists, researchers, and ML engineers can come together and share ideas, get support and contribute to open source projects.
 
@@ -95,7 +94,7 @@ One approach we can try is to use container image-based Lambda function that per
 
 This practical is taking from [Hosting Hugging Face models on AWS](https://aws.amazon.com/blogs/compute/hosting-hugging-face-models-on-aws-lambda/)
 
-![Architecture diagram](serverless-hugging-face.png)
+![Architecture diagram](serverless-hugging-face.png) <br>
 In this architectural diagram:
 1.  Serverless inference is achieved by using Lambda functions that are
     based on container image
@@ -106,6 +105,7 @@ In this architectural diagram:
 4.  Pre-trained models are cached within Amazon Elastic File System
     storage in order to improve inference latency
 
+### Tasks
 * Clone and deploy the project
 * Test each of the lambda functions in the AWS console
 * Add a new inference lambda to the project using an example taken from the local examples in this project .e.g classify.py
