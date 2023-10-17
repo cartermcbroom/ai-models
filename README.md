@@ -7,9 +7,9 @@
 * Look at a way to run the models in AWS
 
 ## Project setup
-1. `python -m venv .env`
-2. `source .env/bin/activate`
-3. `python -m pip install -r requirements.txt`
+1. Open the project in PyCharm
+2. Configure python interpreter
+3. Click install requirements
 
 # Part 1 - Introduction to Hugging Face and how we can run some models locally
 
